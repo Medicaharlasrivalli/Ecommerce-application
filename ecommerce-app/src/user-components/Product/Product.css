@@ -1,0 +1,35 @@
+
+.product-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on multiple lines */
+    margin: 5px;
+    margin-left: 135px;
+    height: 130px;
+  }
+
+  .product-item {
+    flex: 0 0 auto; /* Prevent flex-grow and flex-shrink */
+    width: 250px; /* Set a fixed width */
+    height: 550px; /* Set a fixed height */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .product-item img {
+    width: 100%;
+    min-height: 70%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 70%; /* Ensure it does not exceed 70% of the .product-item height */
+  }
+
+  .product-item h3 {
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .product-grid :hover{
+    background-color:lightgray;
+  }
